@@ -30,7 +30,7 @@ mkdir -p dist
 echo "cp -f *.template dist"
 cp -f *.template dist
 echo "Updating code source bucket in templates with $1"
-export replace="s/%%BUCKET_NAME%%/$1/g"
+export replace="s/a-really-cool-bucket-name/$1/g"
 echo "sed -i -e $replace dist/transit-vpc-primary-account-existing-vpc.template"
 sed -i -e $replace dist/transit-vpc-primary-account-existing-vpc.template
 echo "sed -i -e $replace dist/transit-vpc-primary-account-marketplace.template"

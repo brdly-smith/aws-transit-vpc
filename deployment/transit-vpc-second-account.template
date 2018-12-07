@@ -17,7 +17,7 @@
   "Mappings" : {
     "Function" : {
       "Poller" : {
-        "S3Bucket" : "%%BUCKET_NAME%%",
+        "S3Bucket" : "a-really-cool-bucket-name",
 	      "S3Key" : "transit-vpc/latest/transit-vpc-poller.zip",
         "Name" : "vgw-poller",
         "Handler": "transit-vpc-poller.lambda_handler",

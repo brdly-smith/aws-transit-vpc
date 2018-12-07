@@ -132,7 +132,7 @@
   "Mappings" : {
     "Function" : {
       "Configurator" : {
-        "S3Bucket" : "%%BUCKET_NAME%%",
+        "S3Bucket" : "a-really-cool-bucket-name",
 	      "S3Key" : "transit-vpc/latest/transit-vpc-push-cisco-config.zip",
         "Name" : "cisco-configurator",
         "Handler": "transit_vpc_push_cisco_config/lambda_function.lambda_handler",
@@ -142,7 +142,7 @@
         "MemorySize": "128"
       },
       "Poller" : {
-        "S3Bucket" : "%%BUCKET_NAME%%",
+        "S3Bucket" : "a-really-cool-bucket-name",
 	      "S3Key" : "transit-vpc/latest/transit-vpc-poller.zip",
         "Name" : "vgw-poller",
         "Handler": "transit-vpc-poller.lambda_handler",
